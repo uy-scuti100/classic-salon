@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,600;0,700;0,900;1,200;1,300;1,600;1,900&family=Montserrat:ital,wght@0,800;0,900;1,800;1,900&family=Nunito:ital,wght@0,300;0,400;0,700;0,800;0,900;0,1000;1,700&family=Poor+Story&family=Poppins:wght@200;300;400;600;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;1,300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, "Bitter", serif, "Montserrat", "Nunito", "Poor Story",
+        "cursive""Poppins", sans-serif, "Roboto Mono", monospace;
+}
+
+body {
+    background-color: var(--base-color);
+}
+
+:root {
+    --base-color: #2a2423;
+    --btn-color: #d0a587;
+    --text-color: #2b2e31;
+    --body-color: #f7f7f7;
+    font-size: 62.5%;
+    --para-size: 1.6rem;
+    --white-color: #fbfbfb;
+    --cta-yellow: #fd8f17;
+}
+
+.main-section {
+    background: rgba(0, 0, 0, 0.7) url(/images/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    height: 100vh;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 500px) {
+
+    .light-mode {
+        --base-color: #f7f7f7;
+        --body-color: #2b2e31;
+    }
+
+    :root {
+        --base-color: #2a2423;
+        --btn-color: #d0a587;
+        --text-color: #2b2e31;
+        --body-color: #f7f7f7;
+        --para-size: 1.6rem;
+        --white-color: #fbfbfb;
+        --cta-yellow: #fd8f17;
+        font-size: 62.5%;
+    }
+
+
+    body {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        background-color: var(--base-color);
+        font-size: 1.6rem;
+        position: relative;
+    }
+
+    .nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 2rem;
+        padding-top: 1rem;
+        border-bottom: 2px solid var(--cta-yellow);
+        background-color: var(--base-color);
+        width: 100%;
+        z-index: 5000;
+        transition: 0.5s;
+    }
+
+    nav {
+        position: absolute;
+        display: block;
+        top: 7rem;
+        left: 0;
+    }
+
+    .nav-links {
+        background-color: rgba(0, 0, 0, 0.95);
+        width: 100%;
+        transition: 2s;
+    }
+
+    .nav-links ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .nav-links li {
+        position: relative;
+        padding: 25px;
+    }
+
+    .nav-links ul li a {
+        text-decoration: none;
+        cursor: pointer;
+        color: var(--body-color);
+        font-family: sans-serif;
+    }
+
+    .cta {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .cta-btn {
+        width: 20rem;
+        height: 5rem;
+        border: none;
+        border-radius: 10px;
+        color: var(--body-color);
+        font-size: 2rem;
+        font-weight: 600;
+        background-color: var(--cta-yellow);
+    }
+
+    .book-btn {
+        width: 12rem;
+    }
+
+    .fa-times {
+        position: relative;
+        float: right;
+        margin-right: 3rem;
+        padding: 0.75rem;
+        border: 2px solid var(--cta-yellow);
+        border-radius: 50%;
+    }
+
+    .fa-solid {
+        position: relative;
+        color: #f7f7f7;
+        margin: 0.5rem;
+        font-size: 2.2rem;
+    }
+
+    .logo img {
+        position: relative;
+        width: 15rem;
+    }
+
+    .bold-message h1 {
+        margin-block: 1.5rem;
+        padding-inline: 2rem;
+        padding-top: 13rem;
+        font-size: 4rem;
+        color: var(--white-color);
+        font-family: "montserrat";
+        line-height: 180%;
+    }
+
+    .bold-message h1 span {
+        color: var(--cta-yellow);
+        font-family: "montserrat";
+    }
+
+    .services-sect-1,
+    .review {
+        color: var(--white-color);
+        padding: 3rem;
+        display: block;
+        text-align: left;
+        letter-spacing: 150%;
+        margin-top: 2rem;
+    }
+
+    .services-sect-1 h2,
+    .review h2 {
+        text-transform: uppercase;
+        font-weight: 400;
+        padding-left: 2rem;
+        font-family: poppins;
+    }
+
+    .services-sect-1 p,
+    .review p {
+        font-family: "Trebuchet MS";
+    }
+
+    .services-sect-1::before,
+    .review::before {
+        content: "";
+        margin: 0 0 1em 2rem;
+        height: 0.2rem;
+        width: 8rem;
+        background-color: var(--cta-yellow);
+        display: block;
+    }
+
+    .services-sect-1 p,
+    .review p {
+        padding-left: 2rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        border-radius: 2.5rem;
+        padding: 1rem;
+        width: 50%;
+        transition: 0.2s;
+    }
+
+    .card-content {
+        text-align: center;
+        color: var(--body-color);
+    }
+
+    .card-content h3,
+    .card-content p {
+        padding: 1rem;
+        color: var(--body-color);
+        font-family: "Poor Story";
+    }
+
+    .card-content h3 {
+        font-family: sans-serif;
+        font-size: 3rem;
+    }
+
+    .card-content p {
+        font-family: "Poor Story";
+        font-size: 2rem;
+    }
+
+    .fa-scissors {
+        text-align: center;
+        color: var(--btn-color);
+        transform: rotate(-90deg);
+        font-size: 2.5em;
+        padding: 1rem;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--base-color);
+    }
+
+    .icon-style {
+        color: var(--btn-color);
+        font-size: 3.5em;
+        padding: 2rem;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--base-color);
+    }
+
+    .iconify-icon {
+        margin-top: 3rem;
+        display: block;
+        padding: 2rem;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--base-color);
+    }
+
+    .iconan {
+        padding: 2rem;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--base-color);
+    }
+
+    .swiper {
+        margin-bottom: 3rem;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        background-color: #fd8f17;
+    }
+
+    .swiper-wrapper {
+        position: relative;
+        width: 70%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        box-sizing: content-box;
+    }
+
+    .revs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8rem;
+        background-color: var(--text-color);
+        border-bottom-right-radius: 2.5rem;
+        border-top-left-radius: 2.5rem;
+        border: 1px solid var(--btn-color);
+        padding: 2rem;
+        font-family: "poppins";
+        margin-bottom: 4rem;
+    }
+
+    .revs h3,
+    .star {
+        padding-left: 2rem;
+        padding-top: 1rem;
+    }
+
+    .revs p {
+        padding-top: 1rem;
+    }
+
+    .appointment {
+        display: flex;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    .inputs {
+        display: block;
+        padding: 2rem;
+        border: 1px solid var(--body-color);
+        background: transparent;
+        color: var(--white-color);
+        border-radius: 1rem;
+        width: 100%;
+        outline: none;
+        margin-left: 1rem;
+    }
+
+    #booking {
+        transition: 1s;
+        text-align: center;
+        color: var(--white-color);
+        font-family: 'poppins';
+    }
+
+    #form {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+
+    }
+
+    .footer {
+        background: rgba(27, 22, 22, 0.773) url(/images/barbers.JPG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: color-dodge;
+        box-shadow: 1rem 1rem 40rem rgb(0, 0, 0) inset, -1rem -1rem 40rem rgba(16, 5, 5, 0.973) inset;
+        height: 70rem;
+        width: 100%;
+        margin-top: 10rem;
+        color: var(--body-color);
+        backdrop-filter: blur(3px);
+    }
+
+    .footer h2 {
+        padding: 2rem;
+        color: var(--cta-yellow);
+        font-family: 'poppins';
+        font-weight: 700;
+        font-size: 2.8rem;
+    }
+
+    .footer-contact {
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer-contact p {
+        font-family: 'poor story';
+    }
+
+    .address {
+        margin: 1rem;
+        text-align: left;
+    }
+
+    .soc-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .soc-links a {
+        margin: 3rem;
+        padding: .8rem;
+        border-radius: 50%;
+        background-color: var(--white-color);
+    }
+
+    .toggle-btn {
+        position: fixed;
+        bottom: 10%;
+        left: 5%;
+    }
+
+    .light-toggle {
+        display: none !important;
+    }
+
+    .dark-toggle {
+        display: none;
+    }
+
+}
