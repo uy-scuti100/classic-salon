@@ -387,6 +387,7 @@ body {
 
     .footer-contact p {
         font-family: 'poor story';
+        color: var(--body-color);
     }
 
     .address {
