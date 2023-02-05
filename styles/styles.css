@@ -388,6 +388,7 @@ body {
     .footer-contact p {
         font-family: 'poor story';
         color: var(--body-color);
+        -webkit-text-fill-color: #ffffff; 
     }
 
     .address {
