@@ -414,6 +414,7 @@ body {
         position: fixed;
         bottom: 10%;
         left: 5%;
+        display: none;
     }
 
     .dark-toggle {
