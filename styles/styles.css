@@ -389,7 +389,7 @@ body {
         font-family: 'poor story';
         color: var(--body-color);
         -webkit-text-fill-color: #ffffff; 
-        text-decoration: none;
+        text-decoration: none !important;
     }
 
     .address {
