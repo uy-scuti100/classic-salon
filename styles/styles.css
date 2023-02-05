@@ -376,6 +376,7 @@ body {
         font-family: 'poppins';
         font-weight: 700;
         font-size: 2.8rem;
+        display: none;
     }
 
     .footer-contact {
@@ -413,10 +414,6 @@ body {
         position: fixed;
         bottom: 10%;
         left: 5%;
-    }
-
-    .light-toggle {
-        display: none !important;
     }
 
     .dark-toggle {
