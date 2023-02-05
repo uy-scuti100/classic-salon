@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,600;0,700;0,900;1,200;1,300;1,600;1,900&family=Montserrat:ital,wght@0,800;0,900;1,800;1,900&family=Nunito:ital,wght@0,300;0,400;0,700;0,800;0,900;0,1000;1,700&family=Poor+Story&family=Poppins:wght@200;300;400;600;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;1,300&display=swap");
 
+@import url('https://fonts.cdnfonts.com/css/cantora-one');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif, "Bitter", serif, "Montserrat", "Nunito", "Poor Story",
-        "cursive""Poppins", sans-serif, "Roboto Mono", monospace;
+        "cursive""Poppins", sans-serif, "Roboto Mono", monospace, 'Cantora One';
 }
 
 body {
@@ -161,13 +163,13 @@ body {
         padding-top: 13rem;
         font-size: 4rem;
         color: var(--white-color);
-        font-family: "montserrat";
+        font-family: 'Cantora One',
         line-height: 180%;
     }
 
     .bold-message h1 span {
         color: var(--cta-yellow);
-        font-family: "montserrat";
+        font-family: 'Cantora One';
     }
 
     .services-sect-1,
