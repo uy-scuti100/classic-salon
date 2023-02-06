@@ -163,7 +163,7 @@ body {
         padding-top: 13rem;
         font-size: 4rem;
         color: var(--white-color);
-        font-family: 'Cantora One',
+        font-family: 'Cantora One';
         line-height: 180%;
     }
 
